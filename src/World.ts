@@ -5,13 +5,6 @@ async function fetchCovid() {
 }
 fetchCovid();
 
-interface Dados {
-  cases: number;
-  todayCases: number;
-  deaths: number;
-  recovered: number;
-}
-
 function isDados(dados: unknown): dados is Dados {
   if (
     dados &&
