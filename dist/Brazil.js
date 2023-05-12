@@ -1,7 +1,7 @@
 async function fetchCovid() {
-    const r = await fetch("https://disease.sh/v3/covid-19/all");
+    const r = await fetch("https://disease.sh/v3/covid-19/countries/brazil");
     const json = await r.json();
-    handleDados(json);
+    handleDadoBrazil(json);
 }
 fetchCovid();
 function isDados(dados) {
@@ -17,11 +17,11 @@ function isDados(dados) {
         return false;
     }
 }
-export default function handleDados(data) {
+export default function handleDadoBrazil(data) {
     if (isDados(data)) {
         document.body.innerHTML += `
     <div>
-      <h1>Dados da Covid no Mundo:</h1>
+      <h1>Dados da Covid no Brasil:</h1>
       <p>Casos: ${data.cases}</p>
       <p>Casos no Dia de Hoje: ${data.todayCases}</p>
       <p>Casos Recuperados: ${data.recovered}</p>
@@ -30,4 +30,4 @@ export default function handleDados(data) {
   `;
     }
 }
-//# sourceMappingURL=World.js.map
+//# sourceMappingURL=Brazil.js.map

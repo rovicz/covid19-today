@@ -1,3 +1,5 @@
-import handleCursos from "./World.js";
+import handleDadoBrazil from "./Brazil.js";
+import handleDados from "./World.js";
 
-handleCursos;
+handleDados;
+handleDadoBrazil;
