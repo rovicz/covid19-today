@@ -26,9 +26,9 @@ export default function handleDadoBrazil(data: Dados) {
     <div>
       <h1>Dados da Covid no Brasil:</h1>
       <p>Casos: ${data.cases}</p>
-      <p>Casos no Dia de Hoje: ${data.todayCases}</p>
-      <p>Casos Recuperados: ${data.recovered}</p>
       <p>Mortes: ${data.deaths}</p>
+      <p>Casos Recuperados: ${data.recovered}</p>
+      <p>Casos no Dia de Hoje: ${data.todayCases}</p>
     </div>
   `;
   }
