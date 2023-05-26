@@ -23,10 +23,10 @@ export default function handleDadoBrazil(data) {
         brazilData.innerHTML += `
     <div>
       <h1>Dados da Covid no Brasil:</h1>
-      <p>Casos: ${data.cases}</p>
-      <p>Mortes: ${data.deaths}</p>
-      <p>Casos Recuperados: ${data.recovered}</p>
-      <p>Casos no Dia de Hoje: ${data.todayCases}</p>
+      <p><span>Casos:</span> ${data.cases}</p>
+      <p><span>Mortes:</span> ${data.deaths}</p>
+      <p><span>Casos Recuperados:</span> ${data.recovered}</p>
+      <p><span>Casos no dia de Hoje:</span> ${data.todayCases}</p>
     </div>
   `;
     }

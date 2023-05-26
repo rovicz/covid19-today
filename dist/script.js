@@ -6,7 +6,7 @@ const brazilButton = document.querySelector("#brazil");
 const worldButton = document.querySelector("#world");
 const brazilData = document.querySelector(".brazilData");
 const worldData = document.querySelector(".worldData");
-function toogleData(event) {
+function toogleDataBR(event) {
     event.preventDefault();
     if (brazilData.classList.contains("ativo")) {
         brazilData.classList.remove("ativo");
@@ -14,6 +14,9 @@ function toogleData(event) {
     else if (!brazilData.classList.contains("ativo")) {
         brazilData.classList.add("ativo");
     }
+}
+function toogleDataWRLD(event) {
+    event.preventDefault();
     if (worldData.classList.contains("ativo")) {
         worldData.classList.remove("ativo");
     }
@@ -21,6 +24,6 @@ function toogleData(event) {
         worldData.classList.add("ativo");
     }
 }
-brazilButton?.addEventListener("click", toogleData);
-worldButton?.addEventListener("click", toogleData);
+brazilButton?.addEventListener("click", toogleDataBR);
+worldButton?.addEventListener("click", toogleDataWRLD);
 //# sourceMappingURL=script.js.map
