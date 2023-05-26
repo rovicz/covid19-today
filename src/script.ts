@@ -24,7 +24,7 @@ function toogleDataWRLD(event: Event) {
 
   if (worldData.classList.contains("ativo")) {
     worldData.classList.remove("ativo");
-  } else if (!worldData.classList.contains("ativo")) {
+  } else {
     worldData.classList.add("ativo");
   }
 }
