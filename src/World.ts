@@ -21,8 +21,10 @@ function isDados(dados: unknown): dados is Dados {
 }
 
 export default function handleDados(data: Dados) {
-  if (isDados(data)) {
-    document.body.innerHTML += `
+  const worldData = document.querySelector(".worldData");
+
+  if (isDados(data) && worldData) {
+    worldData.innerHTML += `
     <div>
       <h1>Dados da Covid no Mundo:</h1>
       <p>Casos: ${data.cases}</p>

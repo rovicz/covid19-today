@@ -21,8 +21,10 @@ function isDados(dados: unknown): dados is Dados {
 }
 
 export default function handleDadoBrazil(data: Dados) {
-  if (isDados(data)) {
-    document.body.innerHTML += `
+  const brazilData = document.querySelector(".brazilData");
+
+  if (isDados(data) && brazilData) {
+    brazilData.innerHTML += `
     <div>
       <h1>Dados da Covid no Brasil:</h1>
       <p>Casos: ${data.cases}</p>

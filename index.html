@@ -6,12 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Covid-19 Project</title>
+
+  <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <body>
 
-  <button id="world">Covid no Mundo</button>
-  <button id="brazil">Covid no Brasil</button>
+
+  <div class="container">
+    <div class="buttons">
+      <button id="world">Covid no Mundo</button>
+      <button id="brazil">Covid no Brasil</button>
+    </div>
+
+    <div class="data">
+
+      <div class="brazilData ativo"></div>
+      <div class="worldData"></div>
+
+    </div>
+  </div>
 
   <script type="module" src="./dist/script.js"></script>
 </body>

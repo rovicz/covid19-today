@@ -1,0 +1,26 @@
+body {
+  margin: 0;
+  font-family: monospace;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+button {
+  height: 40px;
+  width: 160px;
+  font-family: monospace;
+  font-weight: bold;
+}
+
+.brazilData,
+.worldData {
+  display: none;
+}
+
+.brazilData.ativo,
+.worldData.ativo {
+  display: inline-block;
+}
