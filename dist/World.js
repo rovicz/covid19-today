@@ -23,10 +23,18 @@ export default function handleDados(data) {
         worldData.innerHTML += `
     <div>
       <h1>Dados da Covid no Mundo:</h1>
-      <p><span>Casos:</span> ${data.cases}</p>
-      <p><span>Mortes:</span> ${data.deaths}</p>
-      <p><span>Casos Recuperados:</span> ${data.recovered}</p>
-      <p><span>Casos no dia de Hoje:</span> ${data.todayCases}</p>
+      <p><span>Casos:</span> ${data.cases.toLocaleString("pt-BR", {
+            style: "decimal",
+        })}</p>
+      <p><span>Mortes:</span> ${data.deaths.toLocaleString("pt-BR", {
+            style: "decimal",
+        })}</p>
+      <p><span>Casos Recuperados:</span> ${data.recovered.toLocaleString("pt-BR", {
+            style: "decimal",
+        })}</p>
+      <p><span>Casos no dia de Hoje:</span> ${data.todayCases.toLocaleString("pt-BR", {
+            style: "decimal",
+        })}</p>
     </div>
   `;
     }

@@ -21,6 +21,7 @@ button {
   color: black;
   cursor: pointer;
   border-radius: 20px;
+  border-color: red;
 }
 
 .brazilData,
@@ -33,7 +34,7 @@ button {
 .worldData.ativo {
   display: block;
   color: white;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .menu {
